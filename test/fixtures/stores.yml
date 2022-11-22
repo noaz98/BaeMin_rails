@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  store_name: MyString
+  store_address: MyString
+  food_category: MyString
+  min_price: 1
+  tip: 1
+  content: MyText
+  guide: MyText
+  phone: MyString
+  delivery_address: MyString
+  operation_address: MyString
+  closedDays: MyString
+  dibs_count: 1
+  review_count: 1
+  rating_count: 1
+
+two:
+  store_name: MyString
+  store_address: MyString
+  food_category: MyString
+  min_price: 1
+  tip: 1
+  content: MyText
+  guide: MyText
+  phone: MyString
+  delivery_address: MyString
+  operation_address: MyString
+  closedDays: MyString
+  dibs_count: 1
+  review_count: 1
+  rating_count: 1

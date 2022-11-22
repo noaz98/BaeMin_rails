@@ -1,0 +1,87 @@
+<%= form_with(model: store, local: true) do |form| %>
+  <% if store.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(store.errors.count, "error") %> prohibited this store from being saved:</h2>
+
+      <ul>
+      <% store.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :store_name %>
+    <%= form.text_field :store_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :store_address %>
+    <%= form.text_field :store_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :food_category %>
+    <%= form.text_field :food_category %>
+  </div>
+
+  <div class="field">
+    <%= form.label :min_price %>
+    <%= form.number_field :min_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tip %>
+    <%= form.number_field :tip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_area :content %>
+  </div>
+
+  <div class="field">
+    <%= form.label :guide %>
+    <%= form.text_area :guide %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :delivery_address %>
+    <%= form.text_field :delivery_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :operation_address %>
+    <%= form.text_field :operation_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :closedDays %>
+    <%= form.text_field :closedDays %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dibs_count %>
+    <%= form.number_field :dibs_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :review_count %>
+    <%= form.number_field :review_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rating_count %>
+    <%= form.number_field :rating_count %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

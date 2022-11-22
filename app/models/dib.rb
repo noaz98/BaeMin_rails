@@ -1,0 +1,2 @@
+class Dib < ApplicationRecord
+end

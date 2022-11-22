@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ceos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Login</th>
+      <th>Password</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ceos.each do |ceo| %>
+      <tr>
+        <td><%= ceo.login_id %></td>
+        <td><%= ceo.password %></td>
+        <td><%= ceo.phone %></td>
+        <td><%= ceo.email %></td>
+        <td><%= link_to 'Show', ceo %></td>
+        <td><%= link_to 'Edit', edit_ceo_path(ceo) %></td>
+        <td><%= link_to 'Destroy', ceo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ceo', new_ceo_path %>

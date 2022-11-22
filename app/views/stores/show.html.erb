@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Store name:</strong>
+  <%= @store.store_name %>
+</p>
+
+<p>
+  <strong>Store address:</strong>
+  <%= @store.store_address %>
+</p>
+
+<p>
+  <strong>Food category:</strong>
+  <%= @store.food_category %>
+</p>
+
+<p>
+  <strong>Min price:</strong>
+  <%= @store.min_price %>
+</p>
+
+<p>
+  <strong>Tip:</strong>
+  <%= @store.tip %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @store.content %>
+</p>
+
+<p>
+  <strong>Guide:</strong>
+  <%= @store.guide %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @store.phone %>
+</p>
+
+<p>
+  <strong>Delivery address:</strong>
+  <%= @store.delivery_address %>
+</p>
+
+<p>
+  <strong>Operation address:</strong>
+  <%= @store.operation_address %>
+</p>
+
+<p>
+  <strong>Closeddays:</strong>
+  <%= @store.closedDays %>
+</p>
+
+<p>
+  <strong>Dibs count:</strong>
+  <%= @store.dibs_count %>
+</p>
+
+<p>
+  <strong>Review count:</strong>
+  <%= @store.review_count %>
+</p>
+
+<p>
+  <strong>Rating count:</strong>
+  <%= @store.rating_count %>
+</p>
+
+<%= link_to 'Edit', edit_store_path(@store) %> |
+<%= link_to 'Back', stores_path %>

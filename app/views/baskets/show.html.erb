@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Count:</strong>
+  <%= @basket.count %>
+</p>
+
+<p>
+  <strong>Menu price:</strong>
+  <%= @basket.menu_price %>
+</p>
+
+<%= link_to 'Edit', edit_basket_path(@basket) %> |
+<%= link_to 'Back', baskets_path %>
