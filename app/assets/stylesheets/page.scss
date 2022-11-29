@@ -1,0 +1,184 @@
+
+.img-size {
+  height: 150px;
+  width: 150px;
+  padding-bottom: 5px;
+  
+}
+
+.img-size2 {
+  padding-top: 5px;
+  height: 300px;
+  width: 80%;
+}
+
+
+
+// 글꼴가져오기
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+.font1{
+	font-family: 'Black Han Sans', sans-serif;
+	font-size: 50px;
+	text-decoration-line: none;
+	color: #000000;
+}
+
+.font2{
+	font-family: 'Black Han Sans', sans-serif;
+	font-size: 40px;
+	text-decoration-line: none;
+	color: #000000;
+}
+
+// 상단바스타일
+.top_bar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #2ac1bc;
+	height: 100px;
+	padding: 30px 60px;
+}
+
+
+// 상단메뉴바스타일
+.top_menubar{
+	display: flex;
+	list-style: none;
+	margin-top: 10px;
+	
+}
+
+// a태그밑줄없애고 검정색으로 바꾸기
+a { 
+	text-decoration: none!important; 
+	color: #000000!important;
+}
+
+
+.top_menuli{
+	padding: 30px;
+}
+
+
+
+// .category_list{
+// 	background-color: #000000;
+// }
+
+// 카테고리 스타일
+.category_a{
+    border: 1px solid #000000 !important;
+    color: #000000;
+    font-size: 2rem;
+    margin: 5px 0px;
+	height: 200px;
+}
+
+// 치킨집 카테고리
+.category_b{
+    border: 2px solid #000000;
+    color: #000000;
+    font-size: 1.8rem;
+    margin-top: 20px;
+	height: 200px;
+	text-align: center;
+	border-radius: 30px;
+}
+
+// 카테고리 가운대로 정렬하기
+.category_arr{
+	width: 70%;
+	margin: 0px auto;
+	padding: 5px;
+}
+
+// 치킨집 카테고리 가운대로 정렬하기
+.category_arr2{
+	width: 45%;
+	margin: 0px auto;
+	padding: 5px;
+}
+
+// 치킨집 메뉴 리스트 가운대로 정렬
+.category_arr3{
+	width: 35%;
+	margin: 0px auto;
+	padding: 10px;
+	text-align: center;
+	// background-color: #ff7f00
+}
+
+// 치킨리스트 패딩넣기
+.mar{
+	padding: 20px;
+}
+
+// 이미지랑 텍스트 한줄로 보이기
+.imgtext{
+	float:left;
+	margin-top: 20px;
+
+}
+
+
+
+// ----------------------------------------------------------------------------------
+
+
+
+
+
+.box{
+	width: 70%;
+	margin: 30px auto;
+	text-align: center;
+	background-color: #989888;
+	padding: 5px;
+}
+
+
+
+
+
+
+.site-header {
+    background-color: #2ac1bc;
+	margin-top: 0px;
+	height: 80px;
+}
+
+.catlist{
+	padding-bottom: 105px;
+	
+}
+
+.datlist{
+	padding: 13px;
+	max-width: 50%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	padding-top: 1000px;
+	justify-content: space-between;
+}
+
+
+
+
+// .a {
+// 	text-decoration: none;
+// 	color: black;
+// }
+
+.nav-c{
+	margin: 0px auto;
+    width: 50%;
+    padding-top: 50px;
+	align-content: center;
+}
+
+  // margin: 0px auto;
+  // padding: 10px;
+  // width: 50%;
+  // border: 1px solid #4CAF50;

@@ -4,6 +4,7 @@ class CreateAddresses < ActiveRecord::Migration[5.2]
       t.string :address
       t.string :address_name
 
+	  t.references :customer, foreign_key: true
       t.timestamps
     end
   end

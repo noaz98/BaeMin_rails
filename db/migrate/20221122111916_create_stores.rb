@@ -15,7 +15,8 @@ class CreateStores < ActiveRecord::Migration[5.2]
       t.integer :dibs_count
       t.integer :review_count
       t.integer :rating_count
-
+	  
+	  t.references :ceo, foreign_key: true
       t.timestamps
     end
   end

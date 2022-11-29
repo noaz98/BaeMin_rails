@@ -1,40 +1,148 @@
 <!DOCTYPE html>
 <html>
+	<head>
+	
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+	  <title>replit</title>
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	</head>
+	
+	<body>
+		<div>
+			<nav class="top_bar">
+				<a href="https://pagetest-mdurv.run.goorm.io/menupage" class="font1">
+					배달의 민족
+				</a>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-</head>
+				<ul class="top_menubar font2">
+					<li class="top_menuli"><a href="https://pagetest-mdurv.run.goorm.io/mypage">마이페이지</a></li>
+					<li class="top_menuli"><a href="">쿠폰함</a></li>
+					<li class="top_menuli"><a href="">선물함</a></li>
+					<li class="top_menuli"><a href="https://pagetest-mdurv.run.goorm.io/shopping">장바구니</a></li>
+				</ul>
 
-<body>
-
-  <nav class="nav">
-      <img src="https://byline.network/wp-content/uploads/2020/01/baemin-300x300.png" class="img-size">
-  </nav>
-
-
-
-  <div class="row">
-    <div class="col">
-	    <div class="card" style="width: 10rem;">
-	<img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Korean_fried_chicken_3_banban.jpg"
-	  class="card-img-top">
-<div class= "card-body">
-	<a href="/chicken" class="btn btn-primary">치킨</a>
-  </div>
+				<button class="font1">
+					로그인하기
+				</button>
+			</nav>
 			
-</div></div>
-</div>
-	
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+			<img class="img-size2 rounded mx-auto d-block" src="<%=asset_path 'image.jpeg'%>">
+			
+		</div>
+		<div class="category_arr">
+			<div class="row ">
+				<div class="col-lg-3 col-md-6">
+					<a href="https://www.naver.com">
+						<div class="category_a">
+							<div>
+								가정식백반
+							</div>
+							<img class="img-size rounded mx-auto d-block" src="<%=asset_path 'rice.jpeg'%>">
+							
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="#">
+						<div class="category_a">
+							<div>
+								돈가스
+							</div>
+							<img class="img-size rounded mx-auto d-block" src="<%=asset_path 'Donkatsu.jpg'%>">
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="#">
+						<div class="category_a">
+							<div>
+								피자
+							</div>
+							<img class="img-size rounded mx-auto d-block" src="<%=asset_path 'pizza.png'%>">
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="#">
+						<div class="category_a">
+							<div>
+								족발
+							</div>
+							<img class="img-size rounded mx-auto d-block" src="<%=asset_path 'jogbal.jpg'%>">
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="https://pagetest-mdurv.run.goorm.io/chicken">
+						<div class="category_a">
+							<div>
+								치킨
+							</div>
+							<img class="img-size rounded mx-auto d-block" src="<%=asset_path 'Chicken.png'%>">
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="#">
+						<div class="category_a">
+							<div>
+								중식
+							</div>
+							<img class="img-size rounded mx-auto d-block" src="<%=asset_path 'Cfood.png'%>">
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="#">
+						<div class="category_a">
+							<div>
+								패스트푸드
+							</div>
+							<img class="img-size rounded mx-auto d-block" src="<%=asset_path 'hamburger.png'%>">
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="#">
+						<div class="category_a">
+							<div>
+								분식
+							</div>
+							<img class="img-size rounded mx-auto d-block" src="<%=asset_path 'Tteokbokki.jpeg'%>">
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="#">
+						<div class="category_a">
+							<div>
+								회
+							</div>
+							<img class="img-size rounded mx-auto d-block" src="<%=asset_path 'sushi.png'%>">
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="#">
+						<div class="category_a">
+							<div>
+								카페,디저트
+							</div>
+							<img class="img-size rounded mx-auto d-block" src="<%=asset_path 'Dessert.png'%>">
+						</div>
+					</a>
+				</div>
+				
+				<!-- 이미지넣는방법
+				<img class="img-size" src="<%=asset_path 'image1.png'%>">
+				<img src="<%=asset_path 'image1.png'%>">
+				<img src="<%=asset_path 'rice.jpeg'%>"> -->
+				
+			</div>
+		</div>
 
-	
-</body>
-
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	</body>
 </html>
-
