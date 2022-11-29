@@ -12,6 +12,21 @@
   width: 80%;
 }
 
+.img-size3 {
+  padding-top: 5px;
+  height: 300px;
+  width: 50%;
+}
+
+.img-size4 {
+  padding-top: 5px;
+  height: 400px;
+  width: 50%;
+}
+
+.img-border{
+	border: 2px solid #000000;
+}
 
 
 // 글꼴가져오기
@@ -26,6 +41,13 @@
 .font2{
 	font-family: 'Black Han Sans', sans-serif;
 	font-size: 40px;
+	text-decoration-line: none;
+	color: #000000;
+}
+
+.font3{
+	font-family: 'Black Han Sans', sans-serif;
+	font-size: 35px;
 	text-decoration-line: none;
 	color: #000000;
 }
@@ -107,6 +129,72 @@ a {
 	padding: 10px;
 	text-align: center;
 	// background-color: #ff7f00
+}
+
+
+.category_arr4{
+	width: 50%;
+	margin: 0px auto;
+	padding: 10px;
+	// text-align: center;
+	// background-color: #ff7f00
+}
+
+.category_arr5{
+	width: 50%;
+	margin: 0px auto;
+	padding: 10px;
+	text-align: center;
+	// background-color: #ff7f00
+}
+
+//마이페이지 정렬
+.category_arr6{
+	width: 50%;
+	margin: 0px auto;
+	padding: 10px;
+	text-align: center;
+	background-color: #ff7f00
+}
+
+//로그인 페이지 정렬
+.category_arr7{
+	width: 50%;
+	margin: 0px auto;
+	padding: 10px;
+	// text-align: center;
+	// background-color: #ff7f00
+}
+
+//오더페이지 배치1
+.orderpage_arr1{
+	width: 50%;
+	margin: 0px auto;
+	padding: 10px;
+	text-align: center;
+	// background-color: #ff7f00
+}
+
+//오더페이지 배치2
+.orderpage_arr2{
+	width: 80%;
+	margin: 0px auto;
+	padding: 5px;
+	text-align: center;
+	// background-color: #ff7f00
+}
+
+
+
+//first연습 css
+.aaa{
+	// width: 50%;
+	// margin: 0px auto;
+	margin-top: 50px;
+	padding: 30px;
+	border: 2px solid #000000;
+	// align-content: center;
+	// background-color: #000000
 }
 
 // 치킨리스트 패딩넣기

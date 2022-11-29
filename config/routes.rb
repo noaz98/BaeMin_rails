@@ -21,6 +21,6 @@ Rails.application.routes.draw do
 	
 	get '/user_order', to: 'user_orders#index'
 	get '/store', to: 'menus#index'
-	get '/menu', to: 'baskets#index'
+	get '/basket', to: 'baskets#index'
 	get '/order', to: 'orders#index'
 end
