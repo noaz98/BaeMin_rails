@@ -23,4 +23,6 @@ Rails.application.routes.draw do
 	get '/store', to: 'menus#index'
 	get '/basket', to: 'baskets#index'
 	get '/order', to: 'orders#index'
+	
+	get '/login',to: 'homes#login'
 end

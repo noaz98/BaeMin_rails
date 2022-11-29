@@ -22,10 +22,24 @@
 					<li class="top_menuli"><a href="/basket">장바구니</a></li>
 					<li class="top_menuli"><a href="/user_order">주문내역</a></li>
 				</ul>
+					<div>
+						<% if user_signed_in? %>
+						<button type="submit "class="font1">
+        					<%= link_to "회원정보", edit_user_registration_path %>
+        				</button>
+						<button type="submit "class="font1">
+							<%= link_to "로그아웃", destroy_user_session_path, method: :delete %>
+						</button>
+						<% else %>
+							<button type="submit "class="font1">
+        					<%= link_to "로그인", "/login" %>
+							</button>
 
-				<button class="font1">
-					로그인하기
-				</button>
+							<button type="submit "class="font1">
+        					<%= link_to "회원가입", "/users/sign_up" %>
+							</button>
+						<% end %>
+						</div>
 			</nav>
 			
 			<img class="img-size2 rounded mx-auto d-block" src="<%=asset_path 'image.jpeg'%>">
