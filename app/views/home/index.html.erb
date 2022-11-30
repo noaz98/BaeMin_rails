@@ -1,0 +1,29 @@
+<div class="container">
+    <%@post.each do|post|%>
+     <h1> 가게명 : <%=post.title%> </h1>
+     id     <%=post.id%><br>
+     작성자 :<%=post.author%><br>
+     내용 :<%=post.content%><br>
+    <div>
+        <a href="/home/update_form/<%=post.id%>:">수정</a>
+    </div>
+     <div >
+        <a href="/home/delete/<%=post.id%>">삭제</a>
+    </div>
+    
+    
+      <a href="/reply/<%=post.id%>">상세정보</a>
+   
+      
+    <form  action="/reply/create/<%=post.id%>" method="post">
+        <textarea name="content"></textarea>
+        <input type="submit">
+    
+    </form>
+      <hr>
+    <%end%>
+      <hr>
+      
+    <br><br>
+    <a href="/home/create_form">글쓰기</a>
+</div>
