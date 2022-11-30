@@ -1,0 +1,56 @@
+  [1m[35m (159.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "test_db"[0m
+  [1m[35m (2281.9ms)[0m  [1m[35mCREATE DATABASE "test_db" ENCODING = 'unicode' TEMPLATE = "template0"[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "addresses" CASCADE[0m
+  [1m[35m (28.8ms)[0m  [1m[35mCREATE TABLE "addresses" ("id" bigserial primary key, "address" character varying, "address_name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "baskets" CASCADE[0m
+  [1m[35m (11.3ms)[0m  [1m[35mCREATE TABLE "baskets" ("id" bigserial primary key, "count" integer, "menu_price" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "ceos" CASCADE[0m
+  [1m[35m (18.5ms)[0m  [1m[35mCREATE TABLE "ceos" ("id" bigserial primary key, "login_id" character varying, "password" character varying, "phone" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "customers" CASCADE[0m
+  [1m[35m (18.1ms)[0m  [1m[35mCREATE TABLE "customers" ("id" bigserial primary key, "login_id" character varying, "password" character varying, "phone" character varying, "email" character varying, "nickname" character varying, "current_address" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "dibs" CASCADE[0m
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE TABLE "dibs" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "homes" CASCADE[0m
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "homes" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "menus" CASCADE[0m
+  [1m[35m (22.9ms)[0m  [1m[35mCREATE TABLE "menus" ("id" bigserial primary key, "menu" character varying, "menu_price" integer, "menu_category" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "orders" CASCADE[0m
+  [1m[35m (21.0ms)[0m  [1m[35mCREATE TABLE "orders" ("id" bigserial primary key, "total_price" integer, "requests" character varying, "payment" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviews" CASCADE[0m
+  [1m[35m (22.4ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "content" text, "rating" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "stores" CASCADE[0m
+  [1m[35m (28.1ms)[0m  [1m[35mCREATE TABLE "stores" ("id" bigserial primary key, "store_name" character varying, "store_address" character varying, "food_category" character varying, "min_price" integer, "tip" integer, "content" text, "guide" text, "phone" character varying, "delivery_address" character varying, "operation_address" character varying, "closedDays" character varying, "dibs_count" integer, "review_count" integer, "rating_count" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_orders" CASCADE[0m
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE "user_orders" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (21.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "phone" character varying, "nickname" character varying, "current_address" character varying)[0m
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (19.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35m (19.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221129101758)[0m
+  [1m[35m (3.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221122115504),
+(20221122115157),
+(20221122111916),
+(20221122142339),
+(20221122115238),
+(20221122115358),
+(20221122115732),
+(20221122115652),
+(20221122115318),
+(20221122115845),
+(20221122115613),
+(20221123042955);
+
+[0m
+  [1m[35m (23.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (37.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2022-11-30 10:03:02.955368"], ["updated_at", "2022-11-30 10:03:02.955368"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
