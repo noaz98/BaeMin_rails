@@ -65,6 +65,6 @@ class CeosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def ceo_params
-      params.require(:ceo).permit(:login_id, :password, :phone, :email)
+      params.fetch(:ceo, {})
     end
 end

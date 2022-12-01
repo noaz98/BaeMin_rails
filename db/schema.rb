@@ -18,8 +18,10 @@ ActiveRecord::Schema.define(version: 2022_11_29_101758) do
   create_table "addresses", force: :cascade do |t|
     t.string "address"
     t.string "address_name"
+    t.bigint "customer_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["customer_id"], name: "index_addresses_on_customer_id"
   end
 
   create_table "baskets", force: :cascade do |t|
@@ -50,8 +52,12 @@ ActiveRecord::Schema.define(version: 2022_11_29_101758) do
   end
 
   create_table "dibs", force: :cascade do |t|
+    t.bigint "store_id"
+    t.bigint "customer_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["customer_id"], name: "index_dibs_on_customer_id"
+    t.index ["store_id"], name: "index_dibs_on_store_id"
   end
 
   create_table "homes", force: :cascade do |t|
@@ -63,23 +69,35 @@ ActiveRecord::Schema.define(version: 2022_11_29_101758) do
     t.string "menu"
     t.integer "menu_price"
     t.string "menu_category"
+    t.bigint "store_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["store_id"], name: "index_menus_on_store_id"
   end
 
   create_table "orders", force: :cascade do |t|
     t.integer "total_price"
     t.string "requests"
     t.string "payment"
+    t.bigint "store_id"
+    t.bigint "menu_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["menu_id"], name: "index_orders_on_menu_id"
+    t.index ["store_id"], name: "index_orders_on_store_id"
   end
 
   create_table "reviews", force: :cascade do |t|
     t.text "content"
     t.integer "rating"
+    t.bigint "store_id"
+    t.bigint "customer_id"
+    t.bigint "menu_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["customer_id"], name: "index_reviews_on_customer_id"
+    t.index ["menu_id"], name: "index_reviews_on_menu_id"
+    t.index ["store_id"], name: "index_reviews_on_store_id"
   end
 
   create_table "stores", force: :cascade do |t|
@@ -97,13 +115,17 @@ ActiveRecord::Schema.define(version: 2022_11_29_101758) do
     t.integer "dibs_count"
     t.integer "review_count"
     t.integer "rating_count"
+    t.bigint "ceo_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["ceo_id"], name: "index_stores_on_ceo_id"
   end
 
   create_table "user_orders", force: :cascade do |t|
+    t.bigint "customer_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["customer_id"], name: "index_user_orders_on_customer_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -121,4 +143,15 @@ ActiveRecord::Schema.define(version: 2022_11_29_101758) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "addresses", "customers"
+  add_foreign_key "dibs", "customers"
+  add_foreign_key "dibs", "stores"
+  add_foreign_key "menus", "stores"
+  add_foreign_key "orders", "menus"
+  add_foreign_key "orders", "stores"
+  add_foreign_key "reviews", "customers"
+  add_foreign_key "reviews", "menus"
+  add_foreign_key "reviews", "stores"
+  add_foreign_key "stores", "ceos"
+  add_foreign_key "user_orders", "customers"
 end
