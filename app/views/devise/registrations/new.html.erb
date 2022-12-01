@@ -1,31 +1,35 @@
-<h2>Sign up</h2>
+<h2>회원가입</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
-	  <form action="">
-    <input <%= f.input :email,
+    <%= f.input :email,
                 required: true,
                 autofocus: true,
-                input_html: { autocomplete: "email" }%> placeholder="2222"> </form>
+                input_html: { autocomplete: "email" },
+				placeholder: "...@example.com"%>
     <%= f.input :password,
                 required: true,
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
+                input_html: { autocomplete: "new-password" },
+				placeholder: "패스워드를 입력해주세요"%>
     <%= f.input :password_confirmation,
                 required: true,
-                input_html: { autocomplete: "new-password" } %>
+                input_html: { autocomplete: "new-password" },
+				placeholder:"패스워드 확인을 위해 한번 더 입력해주세요."%>
 	  <%= f.input :phone,
                 required: true,
-                input_html: { autocomplete: "phone" } %>
+                input_html: { autocomplete: "phone" },
+				placeholder:"000-0000-0000"%>
 	  <%= f.input :nickname,
                 required: true,
-                input_html: { autocomplete: "nickname" } %>
+                input_html: { autocomplete: "nickname" },
+				placeholder:"사용하실 닉네임을 입력해주세요"%>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+    <%= f.button :submit, "가입하기" %>
   </div>
 <% end %>
 

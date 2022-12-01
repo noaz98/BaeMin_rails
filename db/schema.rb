@@ -19,9 +19,11 @@ ActiveRecord::Schema.define(version: 2022_11_29_101758) do
     t.string "address"
     t.string "address_name"
     t.bigint "customer_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["customer_id"], name: "index_addresses_on_customer_id"
+    t.index ["user_id"], name: "index_addresses_on_user_id"
   end
 
   create_table "baskets", force: :cascade do |t|
@@ -54,9 +56,11 @@ ActiveRecord::Schema.define(version: 2022_11_29_101758) do
   create_table "dibs", force: :cascade do |t|
     t.bigint "store_id"
     t.bigint "customer_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["customer_id"], name: "index_dibs_on_customer_id"
+    t.index ["user_id"], name: "index_dibs_on_user_id"
     t.index ["store_id"], name: "index_dibs_on_store_id"
   end
 
@@ -92,10 +96,12 @@ ActiveRecord::Schema.define(version: 2022_11_29_101758) do
     t.integer "rating"
     t.bigint "store_id"
     t.bigint "customer_id"
+    t.bigint "user_id"
     t.bigint "menu_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["customer_id"], name: "index_reviews_on_customer_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
     t.index ["menu_id"], name: "index_reviews_on_menu_id"
     t.index ["store_id"], name: "index_reviews_on_store_id"
   end
@@ -123,9 +129,11 @@ ActiveRecord::Schema.define(version: 2022_11_29_101758) do
 
   create_table "user_orders", force: :cascade do |t|
     t.bigint "customer_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["customer_id"], name: "index_user_orders_on_customer_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -144,14 +152,18 @@ ActiveRecord::Schema.define(version: 2022_11_29_101758) do
   end
 
   add_foreign_key "addresses", "customers"
+  add_foreign_key "addresses", "users"
   add_foreign_key "dibs", "customers"
+  add_foreign_key "dibs", "users"
   add_foreign_key "dibs", "stores"
   add_foreign_key "menus", "stores"
   add_foreign_key "orders", "menus"
   add_foreign_key "orders", "stores"
   add_foreign_key "reviews", "customers"
+  add_foreign_key "reviews", "users"
   add_foreign_key "reviews", "menus"
   add_foreign_key "reviews", "stores"
   add_foreign_key "stores", "ceos"
   add_foreign_key "user_orders", "customers"
+  add_foreign_key "user_orders", "users"
 end

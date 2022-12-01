@@ -5,4 +5,6 @@ class Order < ApplicationRecord
 	has_one :user_order
 	has_one :customer
 	has_one :basket
+	has_one :user
+
 end

@@ -33,10 +33,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 .font1{
 	font-family: 'Black Han Sans', sans-serif;
-	font-size: 50px;
+	font-size: 2.5vw;
 	text-decoration-line: none;
 	color: #000000;
 }
+
 .font2{
 	font-family: 'Black Han Sans', sans-serif;
 	font-size: 40px;
@@ -47,6 +48,13 @@
 .font3{
 	font-family: 'Black Han Sans', sans-serif;
 	font-size: 35px;
+	text-decoration-line: none;
+	color: #000000;
+}
+
+.font4{
+	font-family: 'Black Han Sans', sans-serif;
+	font-size: 2vw;
 	text-decoration-line: none;
 	color: #000000;
 }
@@ -144,7 +152,7 @@ a {
 	margin: 0px auto;
 	padding: 10px;
 	text-align: center;
-	// background-color: #ff7f00
+	background-color: #ff7f00
 }
 
 //마이페이지 정렬
@@ -153,7 +161,7 @@ a {
 	margin: 0px auto;
 	padding: 10px;
 	text-align: center;
-	background-color: #ff7f00
+	// background-color: #ff7f00
 }
 
 //로그인 페이지 정렬
@@ -183,6 +191,64 @@ a {
 	// background-color: #ff7f00
 }
 
+//마이페이지 배치1
+.mypage_arr1{
+	width: 50%;
+	margin: 0px auto;
+	margin-top: 30px;
+	// padding: 5px;
+	text-align: center;
+	// background-color: #ff7f00
+}
+
+//마이페이지 배치2
+.mypage_arr2{
+	width: 100%;
+	margin: 0px auto;
+	padding: 10px;
+	text-align: left;
+	// background-color: #ff7f00
+}
+
+.mypage_name{
+	width: 50%;
+	margin: 0px auto;
+	margin-top: 20px;
+	// padding: 10px;
+	text-align: center;
+	border: 1px solid #000000 !important;
+	// background-color: #ff7f00
+}
+
+.mypage_arr3{
+	width: 100%;
+	// margin: 0px auto;
+	
+	padding: 10px;
+	text-align: left;
+	// background-color: #ff7f00
+	border: 1px solid #000000 !important;
+	margin-top: 5px
+}
+
+.ceopage_arr1{
+	width: 40%;
+	margin: 0px auto;
+	padding: 10px;
+	text-align: center;
+	// background-color: #ff7f00
+}
+
+.ceopage_arr2{
+	width: 75%;
+	margin: 0px auto;
+	padding: 10px;
+	text-align: left;
+	margin-top: 30px;
+	// background-color: #ff7f00
+}
+
+
 
 
 //first연습 css
@@ -207,6 +273,7 @@ a {
 	margin-top: 20px;
 
 }
+
 
 
 

@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   resources :menus
   resources :stores
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-	root 'homes#index'
+	root to: 'homes#index'
 	
 	get '/mypage' ,to: 'customers#index'
 	get '/dibs', to: 'dibs#index'
@@ -24,7 +24,7 @@ Rails.application.routes.draw do
 	get '/basket', to: 'baskets#index'
 	get '/order', to: 'orders#index'
 	get '/ceo', to: 'ceos#index'
-	
-	get '/login', to: 'homes#login'
+	get '/address', to:'addresses#index'
+	get '/login', to: 'devises/session#new'
 
 end

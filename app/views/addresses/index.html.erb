@@ -18,7 +18,7 @@
         <td><%= address.address_name %></td>
         <td><%= link_to 'Show', address %></td>
         <td><%= link_to 'Edit', edit_address_path(address) %></td>
-        <td><%= link_to 'Destroy', address, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', address, method: :delete, data: { confirm: '주소를 삭제하시겠습니까?' } %></td>
       </tr>
     <% end %>
   </tbody>

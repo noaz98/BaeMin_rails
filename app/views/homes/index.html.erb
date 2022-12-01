@@ -19,9 +19,8 @@
 
 				<ul class="top_menubar font2">
 					<li class="top_menuli"><a href="/ceo">사장님광장</a></li>
-					<li class="top_menuli"><a href="/dibs">찜</a></li>
+					<li class="top_menuli"><a href="/address">주소 설정</a></li>
 					<li class="top_menuli"><a href="/basket">장바구니</a></li>
-					<li class="top_menuli"><a href="/user_order">주문내역</a></li>
 				</ul>
 					<div>
 						
@@ -40,11 +39,11 @@
 				</a>
 						<div>
 							<button type="submit "class="font1">
-        					<%= link_to "로그인", "/login" %>
+        					<%= link_to "로그인", new_user_session_path %>
 							</button>
 
 							<button type="submit "class="font1">
-        					<%= link_to "회원가입", "/users/sign_up" %>
+        					<%= link_to "회원가입", new_user_registration_path %>
 							</button>
 						<% end %>
 						</div>

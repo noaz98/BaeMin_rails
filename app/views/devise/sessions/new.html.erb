@@ -1,8 +1,16 @@
 <div class="main users-new">
   <div class="container">
-    <div class="form-heading">로그인</div> <div class="form users-form"> <div class="form-body"> <% if @error_message %> <div class="form-error"> <%= @error_message %> </div>
+    <div class="form-heading">로그인</div> 
+	  <div class="form users-form"> <div class="form-body">
+		  <% if @error_message %> 
+		  <div class="form-error"> 
+			  <%= @error_message %> </div>
         <% end %>
-        <%= form_tag("/login") do %> <p>메일어드레스</p> <input name="user[email]" value="<%= @email %>">
-          <p>패스워드</p> <input type="password" name="user[password]" value="<%= @password %>"> <input type="submit" value="로그인"> <% end %> </div>
+        <%= form_tag ("user_sign_in") do %> 
+		  <p>메일어드레스</p> 
+		  <input name="user[email]" value="<%= @email %>" placeholder="아이디">
+          <p>패스워드</p> 
+		  <input type="password" name="user[password]" value="<%= @password %>" placeholder="비밀번호"> 
+		  <input type="submit" value="로그인"> <% end %> </div>
     </div> </div>
-</div>ra
+</div>

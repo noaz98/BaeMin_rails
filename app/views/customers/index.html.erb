@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p>
 
 <h1>Customers</h1>
 
@@ -39,6 +39,143 @@
   </tbody>
 </table>
 
-<br>
+<br> -->
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- vm글자유동적으로 줄어듬 -->
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+	  <title>replit</title>
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	</head>
+	
+	<body>
+		<div>
+			<nav class="top_bar">
+				<a href="/" class="font1">
+					배달의 민족
+				</a>
+				
+				<div class="font1">
+					마이페이지
+				</div>
+				
+			</nav>
+			
+			<div class="mypage_name font1">
+				<a href="#">
+					<div class="col-lg-12 col-md-12 ">
+						어서오세요😊<%= current_user.nickname%>님!
+					</div>
+				</a>
+			</div>
 
-<%= link_to 'New Customer', new_customer_path %>
+			
+			<div class="mypage_arr1 font1">
+				
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<a href="#">
+							<div class="category_a">
+								<img class="img-size rounded mx-auto d-block" src="<%=asset_path 'my1.png'%>">
+								<div>
+									포인트
+								</div>
+								
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-lg-3 col-md-6">
+						<a href="#">
+							<div class="category_a">
+								<img class="img-size rounded mx-auto d-block" src="<%=asset_path 'my2.png'%>">
+								<div>
+									쿠폰함
+								</div>
+								
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-lg-3 col-md-6">
+						<a href="/user_order">
+							<div class="category_a">
+								<img class="img-size rounded mx-auto d-block" src="<%=asset_path 'my3.png'%>">
+								<div>
+									주문내역
+								</div>
+								
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-lg-3 col-md-6">
+						<a href="/review">
+							<div class="category_a">
+								<img class="img-size rounded mx-auto d-block" src="<%=asset_path 'my4.png'%>">
+								<div>
+									리뷰관리
+								</div>
+								
+							</div>
+						</a>
+					</div>
+					
+					
+				</div>
+
+				<hr>
+				
+				<div class="mypage_arr2 font3">
+					<a href="#">
+						<div class="col-lg-12 col-md-12 mypage_arr3">
+							배민페이 등록
+						</div>
+					</a>
+					
+					<a href="#">
+						<div class="col-lg-12 col-md-12 mypage_arr3">
+							공지사항
+						</div>
+					</a>
+					
+					<a href="#">
+						<div class="col-lg-12 col-md-12 mypage_arr3">
+							이벤트
+						</div>
+					</a>
+					
+					<a href="#">
+						<div class="col-lg-12 col-md-12 mypage_arr3">
+							고객알림센터
+						</div>
+					</a>
+					
+					<a href="#">
+						<div class="col-lg-12 col-md-12 mypage_arr3">
+							1:1 문의
+						</div>
+					</a>
+					
+					<a href="#">
+						<div class="col-lg-12 col-md-12 mypage_arr3">
+							환경설정
+						</div>
+					</a>
+
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+		
+	</body>
+</html>
