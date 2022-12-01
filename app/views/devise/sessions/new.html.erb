@@ -6,7 +6,7 @@
 		  <div class="form-error"> 
 			  <%= @error_message %> </div>
         <% end %>
-        <%= form_tag ("user_sign_in") do %> 
+        <%= form_tag ("/users/sign_in") do %> 
 		  <p>메일어드레스</p> 
 		  <input name="user[email]" value="<%= @email %>" placeholder="아이디">
           <p>패스워드</p> 
