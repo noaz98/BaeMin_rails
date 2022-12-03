@@ -4,6 +4,7 @@ class AddressesController < ApplicationController
   # GET /addresses or /addresses.json
   def index
     @addresses = Address.all
+	  @current_address = Address.find(params[:user_id])
   end
 
   # GET /addresses/1 or /addresses/1.json

@@ -8,5 +8,6 @@ class CreateAddresses < ActiveRecord::Migration[5.2]
 	  t.references :user, foreign_key: true
       t.timestamps
     end
+	  add_foreign_key :addresses, :users, column: :user_id
   end
 end
