@@ -1,16 +1,124 @@
-<div class="main users-new">
-  <div class="container">
-    <div class="form-heading">로그인</div> 
-	  <div class="form users-form"> <div class="form-body">
-		  <% if @error_message %> 
-		  <div class="form-error"> 
-			  <%= @error_message %> </div>
-        <% end %>
-        <%= form_tag ("/users/sign_in") do %> 
-		  <p>메일어드레스</p> 
-		  <input name="user[email]" value="<%= @email %>" placeholder="아이디">
-          <p>패스워드</p> 
-		  <input type="password" name="user[password]" value="<%= @password %>" placeholder="비밀번호"> 
-		  <input type="submit" value="로그인"> <% end %> </div>
-    </div> </div>
-</div>
+<!-- <%= form_tag ("/users/sign_in") do %>
+<input name="user[email]" value="<%= @email %>" placeholder="아이디" />
+<input type="password" name="user[password]" value="<%= @password %>" placeholder="비밀번호" />
+<input type="submit" value="로그인" /> <% end %>
+ -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 부트스트랩 -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
+
+		<meta charset="utf-8" />
+		<title>로그인</title>
+
+		<!-- 스타일 css -->
+		<style>
+			.login-br {
+				/* 가로길이 */
+				width: 50%;
+
+				/* 가운데정렬 */
+				margin: 20px auto;
+
+				/* 텍스트 가운데 정렬 */
+				text-align: center;
+
+				/* 위에서 띄우기 */
+				margin-top: 10%;
+			}
+
+			/* 이미지 사이즈 */
+			.loginimg-size {
+				height: 70px;
+				width: 200px;
+			}
+
+			/* 글자크기 */
+			.font-size1 {
+				/* 글자크기 */
+				font-size: 30px;
+
+				/* 글자굵기 */
+				font-weight: bold;
+			}
+
+			.font-size2 {
+				font-size: 20px;
+			}
+
+			/* input창 꾸미기 */
+			.input-st {
+				padding: 15px;
+				width: 70%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="login-br">
+			<!-- 이미지넣는 방법 -->
+			<img
+				class="loginimg-size rounded mx-auto d-block"
+				src="<%=asset_path 'loginpage.png'%>"
+			/>
+
+			<!-- margin-top을 이용해서 이미지에서 30만큼 떨어트리기 -->
+			<p class="font-size1" style="margin-top: 30px;">
+				통합 로그인
+			</p>
+			<%= form_tag ("/users/sign_in") do %>
+			<form>
+				<p>
+					<input
+						class="input-st"
+						name="user[email]"
+						value="<%= @email %>"
+						placeholder="아이디(이메일)"
+					/>
+				</p>
+
+				<p>
+					<input
+						class="input-st"
+						type="password"
+						name="user[password]"
+						value="<%= @password %>"
+						placeholder="비밀번호"
+					/>
+				</p>
+
+				<!-- row로 작동하는 div만듬 -->
+				<div class="row font-size2" style="width: 70%; margin: 10px auto;">
+					<!-- col-lg-6은 한줄의 반을 의미하고 text-align:left 글자 왼쪽배치 -->
+					<div class="col-lg-6" style="text-align: left;">
+						<input type="checkbox" />
+						아이디저장
+					</div>
+
+					<!-- col-lg-6은 한줄의 반을 의미하고 text-align:right 글자 오른쪽배치 -->
+					<div class="col-lg-6" style="text-align: right;">
+						<%= link_to "아이디/비밀번호찾기" %>
+					</div>
+				</div>
+
+				<p class="font-size2">
+					<%= link_to "회원가입", new_user_registration_path %>
+				</p>
+
+				<!-- d-grid gap-2 col-8 mx-auto은 부트스트랩에서 가져온것들 -->
+				<p class="font-size2 d-grid gap-2 col-8 mx-auto">
+					<button class="btn btn-primary btn-lg" value="로그인">
+						로그인
+					</button>
+				</p>
+			</form>
+			<% end %>
+		</div>
+	</body>
+</html>

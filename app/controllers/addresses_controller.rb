@@ -4,7 +4,6 @@ class AddressesController < ApplicationController
   # GET /addresses or /addresses.json
   def index
     @addresses = Address.all
-	  @current_address = Address.find(params[:user_id])
   end
 
   # GET /addresses/1 or /addresses/1.json
@@ -23,10 +22,10 @@ class AddressesController < ApplicationController
   # POST /addresses or /addresses.json
   def create
     @address = Address.new(address_params)
-
+	# @addresses = User.where([:current_user.id])
     respond_to do |format|
       if @address.save
-        format.html { redirect_to address_url(@address), notice: "Address was successfully created." }
+        format.html { redirect_to user_path(@address.current_user_id) }
         format.json { render :show, status: :created, location: @address }
       else
         format.html { render :new, status: :unprocessable_entity }
