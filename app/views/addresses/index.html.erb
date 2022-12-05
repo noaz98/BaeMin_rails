@@ -1,12 +1,34 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Addresses</h1>
-
-<table>
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+	  <title>replit</title>
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	</head>
+	
+	<body>
+		<div>
+			<nav class="top_bar">
+				<a href="/" class="font1">
+					배달의 민족
+				</a>
+				<div class="font1">
+					주소지 설정
+				</div>
+			</nav>
+		</div>
+		<table>
+			
+<%= link_to '새로운 주소지 생성', new_address_path %>
+			<hr>
   <thead>
     <tr>
-      <th>Address</th>
-      <th>Address name</th>
+      <th>주소</th>
+      <th>주소지 이름</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,17 +36,16 @@
   <tbody>
     <% @addresses.each do |address| %>
       <tr>
-        <td><%= address.address %></td>
+        <td><%= address.address%></td>
         <td><%= address.address_name %></td>
-        <td><%= link_to 'Show', address %></td>
-        <td><%= link_to 'Edit', edit_address_path(address) %></td>
-        <td><%= link_to 'Destroy', address, method: :delete, data: { confirm: '주소를 삭제하시겠습니까?' } %></td>
+        <td><%= link_to '보기', address %></td>
+        <td><%= link_to '수정', edit_address_path(address) %></td>
+        <td><%= link_to '삭제', address, method: :delete, data: { confirm: '주소를 삭제하시겠습니까?' } %></td>
       </tr>
 	  <%= @address %>
     <% end %>
   </tbody>
 </table>
+	</body>
 
-<br>
-
-<%= link_to 'New Address', new_address_path %>
+</html>
