@@ -43560,3 +43560,1459 @@ Processing by AddressesController#index as HTML
 Completed 200 OK in 52ms (Views: 49.2ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/" for 172.17.0.1 at 2022-12-05 16:36:02 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb__3128471589112967529_70204699740900 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb__3128471589112967529_70204699740900 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (396.1ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 483ms (Views: 470.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:36:06 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  Rendered customers/index.html.erb within layouts/application (10.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 18.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:36:07 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  Rendered customers/index.html.erb within layouts/application (32.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:36:22 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  Rendered customers/index.html.erb within layouts/application (7.1ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:36:35 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (35.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  Rendered customers/index.html.erb within layouts/application (45.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 30.5ms | ActiveRecord: 36.4ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:36:42 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  Rendered customers/index.html.erb within layouts/application (9.1ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 65.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:37:16 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (65.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  Rendered customers/index.html.erb within layouts/application (99.4ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 66.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `sum' for #<User:0x000055d1de35a6c8>):
+    70: 						어서오세요😊<%= current_user.nickname%>님!
+    71: 					</div>
+    72: 				</a>
+    73: 				<%= current_user.sum("2*id")%>
+    74: 			</div>
+    75: 
+    76: 			
+  
+app/views/customers/index.html.erb:73:in `_app_views_customers_index_html_erb__950245671740612391_47179927053500'
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:44:25 +0000
+Cannot render console from 10.1.20.142! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  Rendered customers/index.html.erb within layouts/application (7.7ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:44:35 +0000
+Cannot render console from 10.1.20.142! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (54.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  Rendered customers/index.html.erb within layouts/application (61.6ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 17.7ms | ActiveRecord: 55.2ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:44:40 +0000
+Cannot render console from 10.1.20.142! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (45.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  Rendered customers/index.html.erb within layouts/application (51.5ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 14.5ms | ActiveRecord: 45.9ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:47:14 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (55.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  Rendered customers/index.html.erb within layouts/application (1175.8ms)
+Completed 500 Internal Server Error in 1180ms (ActiveRecord: 55.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fb3a80bc260>:0x00007fb39c70fa10>
+Did you mean?  @users):
+    70: 						어서오세요😊<%= current_user.nickname%>님!
+    71: 					</div>
+    72: 				</a>
+    73: 				<%= user.sum(:id) %>
+    74: 			</div>
+    75: 
+    76: 			
+  
+app/views/customers/index.html.erb:73:in `_app_views_customers_index_html_erb__950245671740612391_70204700230220'
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:47:44 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  Rendered customers/index.html.erb within layouts/application (1086.0ms)
+Completed 500 Internal Server Error in 1091ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users' for #<#<Class:0x00007fb3a80bc260>:0x000055d1dda62d90>
+Did you mean?  @users):
+    70: 						어서오세요😊<%= current_user.nickname%>님!
+    71: 					</div>
+    72: 				</a>
+    73: 				<%= users.sum(:id) %>
+    74: 			</div>
+    75: 
+    76: 			
+  
+app/views/customers/index.html.erb:73:in `_app_views_customers_index_html_erb__950245671740612391_47179927563620'
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:47:51 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT SUM("users"."id") FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:73
+  Rendered customers/index.html.erb within layouts/application (10.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 120ms (Views: 116.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/rails/db" for 172.17.0.1 at 2022-12-05 16:48:00 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsDb::DashboardController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/dashboard/index.html.erb within layouts/rails_db/application
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/dashboard/index.html.erb within layouts/rails_db/application (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_header.html.erb (100.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_sidebar.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_gems.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_footer.html.erb (3.8ms)
+Completed 200 OK in 268ms (Views: 209.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/rails/db/tables/users/data" for 172.17.0.1 at 2022-12-05 16:48:02 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsDb::TablesController#data as JS
+  Parameters: {"table_id"=>"users"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/data.js.erb
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_exp_col.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_condition_fields.html.erb (101.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_condition_fields.html.erb (82.8ms)
+  [1m[36m Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (8.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (8.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (9.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (77.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (10.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (10.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (10.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (9.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (10.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_sql.html.erb (72.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_data.html.erb (799.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/data.js.erb (872.1ms)
+Completed 200 OK in 951ms (Views: 579.6ms | ActiveRecord: 349.8ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:48:33 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("users"."id") FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:73
+  Rendered customers/index.html.erb within layouts/application (7.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:49:06 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (90.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  [1m[35m (9.4ms)[0m  [1m[34mSELECT SUM(i) FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:73
+  Rendered customers/index.html.erb within layouts/application (104.5ms)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 100.1ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column "i" does not exist
+LINE 1: SELECT SUM(i) FROM "users"
+                   ^
+: SELECT SUM(i) FROM "users"):
+    70: 						어서오세요😊<%= current_user.nickname%>님!
+    71: 					</div>
+    72: 				</a>
+    73: 				<%= @users.sum(:id[0,1]) %>
+    74: 			</div>
+    75: 
+    76: 			
+  
+app/views/customers/index.html.erb:73:in `_app_views_customers_index_html_erb__950245671740612391_70204700451360'
+Started GET "/mypage" for 172.17.0.1 at 2022-12-05 16:49:11 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (43.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("users"."id") FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:73
+  Rendered customers/index.html.erb within layouts/application (57.7ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 22.8ms | ActiveRecord: 44.5ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:27:19 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358613611180 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358613611180 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (504.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 603ms (Views: 575.0ms | ActiveRecord: 17.7ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:27:24 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358711757860 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358711757860 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (53.1ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/db" for 172.17.0.1 at 2022-12-06 05:27:28 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsDb::DashboardController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/dashboard/index.html.erb within layouts/rails_db/application
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/dashboard/index.html.erb within layouts/rails_db/application (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_header.html.erb (101.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_sidebar.html.erb (3.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_gems.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_footer.html.erb (4.8ms)
+Completed 200 OK in 295ms (Views: 288.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/rails/db/tables/addresses/data" for 172.17.0.1 at 2022-12-06 05:27:31 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsDb::TablesController#data as JS
+  Parameters: {"table_id"=>"addresses"}
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "addresses"[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/data.js.erb
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_exp_col.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_condition_fields.html.erb (177.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_condition_fields.html.erb (12.6ms)
+  [1m[36m Load (2.4ms)[0m  [1m[34mSELECT  "addresses".* FROM "addresses" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (82.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_sql.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_data.html.erb (395.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/data.js.erb (402.5ms)
+Completed 200 OK in 513ms (Views: 381.7ms | ActiveRecord: 101.1ms)
+
+
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:27:34 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  Rendering addresses/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.6ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/addresses/index.html.erb:37
+  Rendered addresses/index.html.erb within layouts/application (14.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 110ms (Views: 101.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-06 05:27:40 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (10.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("users"."id") FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:73
+  Rendered customers/index.html.erb within layouts/application (23.5ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 32.3ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-06 05:27:41 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (60.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("users"."id") FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:73
+  Rendered customers/index.html.erb within layouts/application (67.1ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 15.9ms | ActiveRecord: 61.0ms)
+
+
+Started GET "/rails/db/tables/users/data" for 172.17.0.1 at 2022-12-06 05:27:47 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsDb::TablesController#data as JS
+  Parameters: {"table_id"=>"users"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/data.js.erb
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_exp_col.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_condition_fields.html.erb (14.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_condition_fields.html.erb (83.5ms)
+  [1m[36m Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (81.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (7.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (7.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (7.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (7.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (78.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (7.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (8.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (76.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_sql.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_data.html.erb (674.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/data.js.erb (679.4ms)
+Completed 200 OK in 713ms (Views: 402.6ms | ActiveRecord: 289.0ms)
+
+
+Started GET "/rails/db/tables/addresses/data" for 172.17.0.1 at 2022-12-06 05:27:55 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsDb::TablesController#data as HTML
+  Parameters: {"table_id"=>"addresses"}
+  [1m[35m (24.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "addresses"[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/data.html.erb within layouts/rails_db/application
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_exp_col.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_condition_fields.html.erb (9.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_condition_fields.html.erb (79.9ms)
+  [1m[36m Load (0.4ms)[0m  [1m[34mSELECT  "addresses".* FROM "addresses" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (8.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_sql.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_data.html.erb (210.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/data.html.erb within layouts/rails_db/application (280.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_header.html.erb (2.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_sidebar.html.erb (70.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_gems.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_footer.html.erb (3.4ms)
+Completed 200 OK in 444ms (Views: 368.1ms | ActiveRecord: 39.3ms)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2022-12-06 05:27:57 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q+Kq3s80lbhhdfLF9EAuZerJ9sJdb7WdkCZWZocGLosPa7kzvd15t1fPj69tWSVuoW6bX1esFtHZtRxYz+oqKA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://baemin-rails-jsfqh.run.goorm.io/
+Completed 302 Found in 9ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:27:57 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358613489080 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358613489080 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (13.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-12-06 05:27:58 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (33.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-12-06 05:28:05 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pzr5pQIVtKZWvBw/ATaQmJIb0F7XMYPOoZ0PFta8p7tfvx2Q1lL8fxuNewzhk+lxj6vSbo69QXsSCysB+uT49Q==", "user"=>{"email"=>"test@exam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@exam.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://baemin-rails-jsfqh.run.goorm.io/
+Completed 302 Found in 1114ms (ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-12-06 05:28:06 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pzr5pQIVtKZWvBw/ATaQmJIb0F7XMYPOoZ0PFta8p7tfvx2Q1lL8fxuNewzhk+lxj6vSbo69QXsSCysB+uT49Q==", "user"=>{"email"=>"test@exam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://baemin-rails-jsfqh.run.goorm.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 89ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:28:06 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358711524240 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358711524240 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (12.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:28:10 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  Rendering addresses/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.5ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/addresses/index.html.erb:37
+  Rendered addresses/index.html.erb within layouts/application (2.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-06 05:28:12 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("users"."id") FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:73
+  Rendered customers/index.html.erb within layouts/application (12.7ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 33.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:28:13 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_47087572110860 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_47087572110860 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (89.7ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 102ms (Views: 99.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:28:14 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  Rendering addresses/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.4ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/addresses/index.html.erb:37
+  Rendered addresses/index.html.erb within layouts/application (2.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:28:20 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358711807180 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358711807180 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (93.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 106ms (Views: 104.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:28:22 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358613468720 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358613468720 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (60.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mypage" for 172.17.0.1 at 2022-12-06 05:28:23 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.html.erb:19
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:32
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/customers/index.html.erb:70
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("users"."id") FROM "users"[0m
+  ↳ app/views/customers/index.html.erb:73
+  Rendered customers/index.html.erb within layouts/application (13.7ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 15.7ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:28:24 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (24.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_47087579936320 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_47087579936320 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (35.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 20.2ms | ActiveRecord: 24.2ms)
+
+
+Started GET "/rails/db/tables/users/data" for 172.17.0.1 at 2022-12-06 05:28:27 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsDb::TablesController#data as JS
+  Parameters: {"table_id"=>"users"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/data.js.erb
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_exp_col.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_condition_fields.html.erb (82.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_condition_fields.html.erb (10.7ms)
+  [1m[36m Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (8.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (80.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (7.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (7.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (78.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (9.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (78.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (8.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (7.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_sql.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_data.html.erb (618.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/data.js.erb (691.7ms)
+Completed 200 OK in 802ms (Views: 478.1ms | ActiveRecord: 294.6ms)
+
+
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:28:33 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  Rendering addresses/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.4ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/addresses/index.html.erb:37
+  Rendered addresses/index.html.erb within layouts/application (2.1ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 55ms (Views: 52.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:29:59 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358711675940 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358711675940 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (109.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 198ms (Views: 184.6ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:30:00 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358545083480 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358545083480 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (30.6ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 110ms (Views: 108.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:30:01 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358612291320 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358612291320 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (31.1ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 207ms (Views: 205.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:30:02 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.9ms)
+
+
+  
+NameError (uninitialized constant AddressesController::Post):
+  
+app/controllers/addresses_controller.rb:9:in `index'
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:30:32 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_47087579934640 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_47087579934640 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (102.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 185ms (Views: 174.3ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:30:33 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358613254380 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358613254380 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (68.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 87.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:30:34 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.8ms)
+
+
+  
+NameError (uninitialized constant AddressesController::Post):
+  
+app/controllers/addresses_controller.rb:9:in `index'
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:32:25 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ArgumentError (Invalid route name, already in use: 'address' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:28:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:32:29 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/address"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.4) lib/rack/proxy.rb:78:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:32:32 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358613284580 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358613284580 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (106.6ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 206ms (Views: 193.3ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:32:34 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/address"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.4) lib/rack/proxy.rb:78:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:32:38 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358612482280 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358612482280 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (30.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:33:26 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358613025960 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358613025960 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (101.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 198ms (Views: 186.8ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:33:27 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  [1m[36mUser Load (68.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 69.1ms)
+
+
+  
+NameError (uninitialized constant AddressesController::Post):
+  
+app/controllers/addresses_controller.rb:9:in `index'
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:33:30 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_47087568808880 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_47087568808880 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (17.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:33:41 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358612823140 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358612823140 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (194.6ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 292ms (Views: 209.9ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:33:42 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  Rendering addresses/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.4ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/addresses/index.html.erb:37
+  Rendered addresses/index.html.erb within layouts/application (84.7ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 227ms (Views: 185.9ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/rails/db/tables/addresses/data" for 172.17.0.1 at 2022-12-06 05:34:07 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsDb::TablesController#data as JS
+  Parameters: {"table_id"=>"addresses"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "addresses"[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendering /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/data.js.erb
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/shared/_exp_col.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_condition_fields.html.erb (16.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_condition_fields.html.erb (12.6ms)
+  [1m[36m Load (0.5ms)[0m  [1m[34mSELECT  "addresses".* FROM "addresses" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_row.html.erb (81.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_sql.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/_data.html.erb (386.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/rails_db-2.4.1/app/views/rails_db/tables/data.js.erb (391.5ms)
+Completed 200 OK in 604ms (Views: 256.1ms | ActiveRecord: 156.3ms)
+
+
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:34:28 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 13.7ms)
+
+
+  
+NoMethodError (undefined method `address' for #<Class:0x00007ffb540af828>):
+  
+app/controllers/addresses_controller.rb:10:in `index'
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:34:46 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mUser Load (71.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mAddress Load (0.4ms)[0m  [1m[34mSELECT  "addresses".* FROM "addresses" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 302ms (ActiveRecord: 80.1ms)
+
+
+  
+  [1m[36mCACHE Address Load (0.0ms)[0m  [1m[34mSELECT  "addresses".* FROM "addresses" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+NoMethodError (undefined method `address' for #<Address::ActiveRecord_Relation:0x000055a6dced9648>):
+  
+app/controllers/addresses_controller.rb:10:in `index'
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:34:57 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mAddress Load (5.0ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/controllers/addresses_controller.rb:10
+  Rendering addresses/index.html.erb within layouts/application
+  Rendered addresses/index.html.erb within layouts/application (1.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 202ms (Views: 15.7ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:35:17 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mAddress Load (0.3ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/controllers/addresses_controller.rb:10
+  Rendering addresses/index.html.erb within layouts/application
+  [1m[36mAddress Load (3.3ms)[0m  [1m[34mSELECT  "addresses".* FROM "addresses" INNER JOIN "users" ON "users"."id" = "addresses"."user_id" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 11]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  Rendered addresses/index.html.erb within layouts/application (12.3ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 4.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `address' for #<Address::ActiveRecord_Relation:0x000055a6db9fd030>):
+    42:         <td><%= link_to '수정', edit_address_path(address) %></td>
+    43:         <td><%= link_to '삭제', address, method: :delete, data: { confirm: '주소를 삭제하시겠습니까?' } %></td>
+    44:       </tr>
+    45: 	  <%= @currentaddress.address %>
+    46:     <% end %>
+    47:   </tbody>
+    48: </table>
+  
+app/views/addresses/index.html.erb:45:in `block in _app_views_addresses_index_html_erb___3082995917590723514_47087569753880'
+app/views/addresses/index.html.erb:37:in `_app_views_addresses_index_html_erb___3082995917590723514_47087569753880'
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:35:35 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mAddress Load (0.3ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/controllers/addresses_controller.rb:10
+  Rendering addresses/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.4ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" INNER JOIN "users" ON "users"."id" = "addresses"."user_id" WHERE "users"."id" = $1[0m  [["id", 44]]
+  ↳ app/views/addresses/index.html.erb:37
+  Rendered addresses/index.html.erb within layouts/application (3.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 84ms (Views: 79.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:35:42 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mAddress Load (0.4ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/controllers/addresses_controller.rb:10
+  Rendering addresses/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.6ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" INNER JOIN "users" ON "users"."id" = "addresses"."user_id" WHERE "users"."id" = $1[0m  [["id", 44]]
+  ↳ app/views/addresses/index.html.erb:37
+  Rendered addresses/index.html.erb within layouts/application (3.5ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 18.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/addresses/7" for 172.17.0.1 at 2022-12-06 05:35:45 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mAddress Load (0.5ms)[0m  [1m[34mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:77
+  Rendering addresses/show.html.erb within layouts/application
+  Rendered addresses/show.html.erb within layouts/application (0.7ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 44ms (Views: 11.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:35:46 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358512011320 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358512011320 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (22.6ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 44.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2022-12-06 05:35:49 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"syWMYPuYRmEKkyD+3zjyRucvRZpSj5EnQaU9v8qA4rLJmCCsCJGMa0UVGMs+tuM114J6bLM1bRIk5rXWQxHIsQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://baemin-rails-jsfqh.run.goorm.io/
+Completed 302 Found in 11ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:35:49 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_47087576725900 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_47087576725900 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (16.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-12-06 05:35:50 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-12-06 05:35:52 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DNY8hpcba7hG/xa42b/OFQXrHfzMFDVFDVAgeX0RlKe5yHX3EQMcpXKl1kTLGLqjR9gkmMDX7Z5RUOI/8O3I9Q==", "user"=>{"email"=>"2@2.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "2@2.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://baemin-rails-jsfqh.run.goorm.io/
+Completed 302 Found in 1055ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:35:53 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/homes/index.html.erb:13
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358614211060 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358614211060 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (14.7ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 99ms (Views: 96.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/address" for 172.17.0.1 at 2022-12-06 05:35:54 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/addresses_controller.rb:7
+  [1m[36mAddress Load (0.3ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/controllers/addresses_controller.rb:10
+  Rendering addresses/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.6ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" INNER JOIN "users" ON "users"."id" = "addresses"."user_id" WHERE "users"."id" = $1[0m  [["id", 5]]
+  ↳ app/views/addresses/index.html.erb:37
+  Rendered addresses/index.html.erb within layouts/application (2.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 19.3ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2022-12-06 05:35:59 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9kWM7TRQgAZbKpJq8dhsDnBAnpLW7DIxQtXshE651nhcsNhzeg39lBnejAzqoIX1gc6SagPSmGoh8poaH+MgPg=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://baemin-rails-jsfqh.run.goorm.io/
+Completed 302 Found in 17ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.17.0.1 at 2022-12-06 05:35:59 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358547932080 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:160)
+DEPRECATION WARNING: The asset "image1.png" is not present in the asset pipeline.
+Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_homes_index_html_erb___2379198729822559727_70358547932080 at /workspace/BaeMin_rails/app/views/homes/index.html.erb:161)
+  Rendered homes/index.html.erb within layouts/application (11.1ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+

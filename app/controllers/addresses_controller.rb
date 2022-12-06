@@ -4,7 +4,10 @@ class AddressesController < ApplicationController
   # GET /addresses or /addresses.json
   def index
 	  @addresses = Address.all
-	# @user = User.find_by(id: current_user.id)
+	@user = User.find_by(id: current_user.id)
+	  # 현재 로그인 중인 유저의 주소 목록을 조회합니다.
+	@currentaddress = Address.joins(:user).where(users: {id: @user.id})
+
 	#   puts current_user.id
 	# id = current_user.id
 	# @address = Address.find(params[:id])
